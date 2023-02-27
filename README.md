@@ -13,7 +13,8 @@ This script measures the time it takes for a webpage to load using the Playwrigh
 The code then uses an assertion to verify that the page loaded within 4.5 seconds. If the page load time exceeds this limit, the assertion will fail and an error message will be displayed in the console.
 Finally, the browser instance is closed.
 
-
+## Gif
+![Alt Text](https://raw.githubusercontent.com/FahirL/Playwright-Perfomance-Tests/master/gif/playwright-perfomance-tests.gif)
 # Playwright Performance Tests
 
 This project contains a suite of performance tests using [Playwright](https://playwright.dev/), a Node.js library to automate Chromium, Firefox and WebKit with a single API.
