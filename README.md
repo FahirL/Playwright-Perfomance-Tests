@@ -9,7 +9,7 @@ Playwright-Perfomance-Tests/tests/fmp-test.js
 This test measures the time it takes for the first important image to load on the Facebook homepage, which is identified using its URL. It checks that the image loads within 2.5 seconds and logs the result to the console.
 
 Playwright-Perfomance-Tests/tests/loadTimeTest.js.js  
-This script measures the time it takes for a webpage to load using the Playwright testing framework. It navigates to the URL https://demo.guru99.com/test/login.html and records the start and end times of the page load. It then calculates the page load time by subtracting the start time from the end time, and logs the result to the console.
+This script measures the time it takes for a webpage to load using the Playwright testing framework. It navigates to the URL demo.guru99.com/test/login.html and records the start and end times of the page load. It then calculates the page load time by subtracting the start time from the end time, and logs the result to the console.
 The code then uses an assertion to verify that the page loaded within 4.5 seconds. If the page load time exceeds this limit, the assertion will fail and an error message will be displayed in the console.
 Finally, the browser instance is closed.
 
