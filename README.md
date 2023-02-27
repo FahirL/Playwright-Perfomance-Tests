@@ -5,10 +5,10 @@ This repository contains performance tests using Playwright for measuring variou
 Playwright-Perfomance-Tests/tests/domContentLoadTest.spec.js  
 This test uses Playwright to launch a new Chromium browser and navigate to the Google homepage. It then waits for the DOM Content Loaded event to fire before measuring the time it took to reach that point. Finally, it logs the result and checks whether the time was within an acceptable range.
 
-Playwright-Perfomance-Tests/tests/fmp-test.spec.js
+Playwright-Perfomance-Tests/tests/fmp-test.spec.js  
 This test measures the time it takes for the first important image to load on the Facebook homepage, which is identified using its URL. It checks that the image loads within 2.5 seconds and logs the result to the console.
 
-Playwright-Perfomance-Tests/tests/loadTimeTest.spec.js 
+Playwright-Perfomance-Tests/tests/loadTimeTest.spec.js  
 This script measures the time it takes for a webpage to load using the Playwright testing framework. It navigates to the URL demo.guru99.com/test/login.html and records the start and end times of the page load. It then calculates the page load time by subtracting the start time from the end time, and logs the result to the console.
 The code then uses an assertion to verify that the page loaded within 4.5 seconds. If the page load time exceeds this limit, the assertion will fail and an error message will be displayed in the console.
 Finally, the browser instance is closed.
