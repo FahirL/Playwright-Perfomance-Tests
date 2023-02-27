@@ -1,13 +1,14 @@
-const { chromium } = require('playwright');
+const { chromium } = require('@playwright/test');
+const { test } = require('@playwright/test');
 const assert = require('assert');
 
-(async () => {
+test('loadTimeTest.js', async () => {
   const browser = await chromium.launch();
   const page = await browser.newPage();
 
   const startTime = Date.now();
 
-  await page.goto('https://demo.guru99.com/test/login.html');
+  await page.goto('https://www.facebook.com/');
 
   const endTime = Date.now();
   const loadTime = endTime - startTime;
@@ -17,4 +18,4 @@ const assert = require('assert');
   assert.ok(loadTime <= 4500, 'The page did not load within 4.5 seconds!');
 
   await browser.close();
-})();
+});

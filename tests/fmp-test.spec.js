@@ -1,7 +1,8 @@
-const { chromium } = require('playwright');
+const { chromium } = require('@playwright/test');
+const { test } = require('@playwright/test');
 const assert = require('assert');
 
-(async () => {
+test('fmp-test.js', async () => {
   const browser = await chromium.launch();
   const page = await browser.newPage();
 
@@ -19,4 +20,4 @@ const assert = require('assert');
   assert.ok(loadTime <= 2500, 'The first important image did not load within 2.5 seconds!');
 
   await browser.close();
-})();
+});

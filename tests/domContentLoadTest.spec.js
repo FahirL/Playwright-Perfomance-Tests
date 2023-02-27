@@ -1,7 +1,8 @@
-const { chromium } = require('playwright');
+const { chromium } = require('@playwright/test');
+const { test } = require('@playwright/test');
 const assert = require('assert');
 
-(async () => {
+test('domContentLoadTest.js', async () => {
   const browser = await chromium.launch();
   const page = await browser.newPage();
 
@@ -17,4 +18,4 @@ const assert = require('assert');
   assert.ok(domContentLoadedTime <= 2000, 'The DOM content took too long to load!');
 
   await browser.close();
-})();
+});
