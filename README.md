@@ -2,7 +2,7 @@
 This repository contains performance tests using Playwright for measuring various performance metrics of web applications, such as first meaningful paint, total blocking time, and time to DOM content loaded.
 
 # About tests
-Playwright-Perfomance-Tests/tests/domContentLoadTest.spec.js 
+Playwright-Perfomance-Tests/tests/domContentLoadTest.spec.js  
 This test uses Playwright to launch a new Chromium browser and navigate to the Google homepage. It then waits for the DOM Content Loaded event to fire before measuring the time it took to reach that point. Finally, it logs the result and checks whether the time was within an acceptable range.
 
 Playwright-Perfomance-Tests/tests/fmp-test.spec.js
